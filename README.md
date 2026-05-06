@@ -49,6 +49,16 @@ npm run build
   publish = "dist"
 ```
 
+### GitHub Pages
+
+This repository is also configured to deploy automatically to GitHub Pages using GitHub Actions. After pushing to `master`, the workflow will build and publish the `dist` folder to the `gh-pages` branch.
+
+If your repository is public, the site can be available at:
+
+```
+https://umairkonduru263-bot.github.io/MelodyHub/
+```
+
 No environment variables are needed for the current static app.
 
 ## Final checklist
