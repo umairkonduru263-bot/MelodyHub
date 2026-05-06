@@ -56,6 +56,7 @@ export default function Player({ currentSong, isPlaying, setIsPlaying, onNext, o
           <p className="player-label">Now Playing</p>
           <h3>{currentSong.title}</h3>
           <p>{currentSong.artist}</p>
+          <p className="player-meta">{currentSong.movie} • {currentSong.year}</p>
         </div>
       </div>
 

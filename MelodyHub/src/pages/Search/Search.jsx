@@ -9,7 +9,8 @@ export default function Search({ songs, searchQuery, setSearchQuery, onPlay }) {
         return (
           song.title.toLowerCase().includes(query) ||
           song.artist.toLowerCase().includes(query) ||
-          song.language.toLowerCase().includes(query)
+          song.movie.toLowerCase().includes(query) ||
+          song.year.toString().includes(query)
         )
       }),
     [query, songs],
@@ -19,12 +20,12 @@ export default function Search({ songs, searchQuery, setSearchQuery, onPlay }) {
     <main className="page-content">
       <section className="search-panel">
         <div className="section-header">
-          <h2>Search songs</h2>
-          <p>Type any artist, song title, or language.</p>
+          <h2>Search Telugu Songs</h2>
+          <p>Type song name, artist, movie, or year.</p>
         </div>
         <input
           type="search"
-          placeholder="Search by song, artist, or language"
+          placeholder="Search by song, artist, movie, or year..."
           value={searchQuery}
           onChange={(event) => setSearchQuery(event.target.value)}
           className="search-input"
@@ -36,7 +37,7 @@ export default function Search({ songs, searchQuery, setSearchQuery, onPlay }) {
           filteredSongs.map((song) => <SongCard key={song.id} song={song} onPlay={onPlay} />)
         ) : (
           <div className="empty-state">
-            <p>No songs matched your search. Try another name.</p>
+            <p>No songs matched your search. Try another song, artist, movie, or year.</p>
           </div>
         )}
       </section>

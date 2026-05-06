@@ -10,10 +10,10 @@ export default function Sidebar({ activePage, onNav, playlists, activePlaylistId
   return (
     <aside className="sidebar">
       <div className="brand">
-        <div className="brand-icon">🎵</div>
+        <div className="brand-icon">�</div>
         <div>
-          <h1>Music Player</h1>
-          <p>Spotify-style UI</p>
+          <h1>Vibeify</h1>
+          <p>Dark music streaming</p>
         </div>
       </div>
 

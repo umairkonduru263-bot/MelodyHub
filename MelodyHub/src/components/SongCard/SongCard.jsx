@@ -7,8 +7,9 @@ function SongCard({ song, onPlay }) {
       <img src={song.img} alt={`${song.title} cover`} />
       <div className="song-info">
         <h3>{song.title}</h3>
-        <p>{song.artist}</p>
-        <p className="song-language">{song.language}</p>
+        <p className="song-artist">{song.artist}</p>
+        <p className="song-movie">{song.movie}</p>
+        <p className="song-year">{song.year}</p>
       </div>
       <button className="play-action" aria-label={`Play ${song.title}`}>
         <FaPlay />

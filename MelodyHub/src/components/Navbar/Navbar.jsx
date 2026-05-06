@@ -5,11 +5,11 @@ export default function Navbar({ activePage }) {
     <header className="navbar">
       <div>
         <span className="navbar-pill">{activePage === 'home' ? 'Home' : activePage === 'search' ? 'Search' : 'Library'}</span>
-        <h2>Discover your next favorite track</h2>
+        <h2>Discover your next vibe</h2>
       </div>
       <div className="navbar-meta">
         <FaMusic />
-        <span>Now playing live</span>
+        <span>Streaming now</span>
       </div>
     </header>
   )

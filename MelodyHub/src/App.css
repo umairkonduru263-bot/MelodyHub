@@ -254,7 +254,24 @@
   font-size: 0.95rem;
 }
 
-.song-language {
+.song-artist {
+  font-weight: 500;
+}
+
+.song-movie {
+  font-size: 0.9rem;
+  color: #6ee7b7;
+}
+
+.song-year {
+  margin-top: 4px;
+  color: #c084fc;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.song-meta {
   margin-top: 4px;
   color: #6ee7b7;
   font-size: 0.82rem;
@@ -346,6 +363,12 @@
 
 .player-left p {
   color: #94a3b8;
+}
+
+.player-meta {
+  font-size: 0.9rem !important;
+  color: #6ee7b7 !important;
+  margin-top: 4px !important;
 }
 
 .player-controls {
